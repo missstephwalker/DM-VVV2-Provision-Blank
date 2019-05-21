@@ -2,16 +2,16 @@
 # Provision script for Delicious Media WordPress Projects
 
 # Add the bitbucket.org ssh host keys to our known hosts file if it isn't there already
-#if ! grep -q bitbucket.org ~/.ssh/known_hosts; then
-#	echo -e "\n Getting BitBucket ssh host keys.\n\n"
-#    noroot ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
-#fi;
+if ! grep -q bitbucket.org ~/.ssh/known_hosts; then
+	echo -e "\n Getting BitBucket ssh host keys.\n\n"
+    noroot ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+fi;
 
 # Add the github.com ssh host keys to our known hosts file if it isn't there already
-#if ! grep -q github.com ~/.ssh/known_hosts; then
-#	echo -e "\n Getting GitHub ssh host keys.\n\n"
- #   noroot ssh-keyscan github.com >> ~/.ssh/known_hosts
-#fi;
+if ! grep -q github.com ~/.ssh/known_hosts; then
+	echo -e "\n Getting GitHub ssh host keys.\n\n"
+    noroot ssh-keyscan github.com >> ~/.ssh/known_hosts
+fi;
 
 # Make a database, if we don't already have one
 echo -e "\nCreating database '${VVV_SITE_NAME}' (if it's not already there)"
