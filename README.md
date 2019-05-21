@@ -1,4 +1,4 @@
-# DM-VVV2-Provision-Blank
+# DM-VVV2-Provision-Blank-V2
 Provision scripts to setup an empty vagrant host ready to bring in an existing project.
 
 If you don't already have a vvv-custom.yml, create it by copying _~/vagrant-local/vvv-config.yml_ to _~/vagrant-local/vvv-custom.yml_.
