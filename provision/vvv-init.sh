@@ -21,8 +21,8 @@ echo -e "\n DB operations done.\n\n"
 
 # Create Nginx log files if missing
 mkdir -p ${VVV_PATH_TO_SITE}/log
-touch ${VVV_PATH_TO_SITE}/log/error.log
-touch ${VVV_PATH_TO_SITE}/log/access.log
+touch ${VVV_PATH_TO_SITE}/log/nginx-error.log
+touch ${VVV_PATH_TO_SITE}/log/nginx-access.log
 
 # Install and configure the latest stable version of WordPress
 if [[ ! -d "${VVV_PATH_TO_SITE}/public_html" ]]; then
