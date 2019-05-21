@@ -30,7 +30,7 @@ if [[ ! -d "${VVV_PATH_TO_SITE}/public_html" ]]; then
 	echo -e "\n Setting up site ${VVV_SITE_NAME}.\n\n"
 
 	# Add the site name to the hosts file
-	echo "127.0.0.1 ${VVV_SITE_NAME}.local # vvv-auto" >> "/etc/hosts"
+	echo "127.0.0.1 ${VVV_SITE_NAME}.test # vvv-auto" >> "/etc/hosts"
 
 	mkdir -p ${VVV_PATH_TO_SITE}/public_html
 	cd ${VVV_PATH_TO_SITE}/public_html
@@ -39,5 +39,5 @@ else
 	echo -e "\n Nothing to do for site.\n\n"
 fi
 
-#does this happen?
+#Copy the template across to the conf file
 cp -f "${VVV_PATH_TO_SITE}/provision/vvv-nginx.conf.tmpl" "${VVV_PATH_TO_SITE}/provision/vvv-nginx.conf"
