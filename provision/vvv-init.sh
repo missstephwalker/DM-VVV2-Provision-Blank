@@ -38,3 +38,6 @@ if [[ ! -d "${VVV_PATH_TO_SITE}/public_html" ]]; then
 else 
 	echo -e "\n Nothing to do for site.\n\n"
 fi
+
+#does this happen?
+cp -f "${VVV_PATH_TO_SITE}/provision/vvv-nginx.conf.tmpl" "${VVV_PATH_TO_SITE}/provision/vvv-nginx.conf"
